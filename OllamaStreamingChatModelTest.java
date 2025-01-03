@@ -48,8 +48,6 @@ public class OllamaStreamingChatModelTest {
         testStreaming(LLAMA3_2_MODEL_NAME);
         testStreaming(MISTRAL_MODEL_NAME);
         testStreaming(PHI3_MODEL_NAME);
-
-        /** Gama is failing to produce 100 world. **/
         testStreaming(GEMMA_MODEL_NAME);
     }
 }
