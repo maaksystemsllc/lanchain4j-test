@@ -1,4 +1,4 @@
-package maak;
+package maak.langchain;
 
 import dev.langchain4j.model.chat.ChatLanguageModel;
 import dev.langchain4j.model.ollama.OllamaChatModel;
@@ -8,7 +8,7 @@ import static maak.LLMConstants.*;
 public class SimpleChatTest {
 
     private static void testLLMModel(String modelName) {
-        System.out.println("\n\n>>>>>>>Testing Model :" + modelName + "<<<<<<\n");
+
         ChatLanguageModel chatModel = OllamaChatModel.builder()
                 .baseUrl(OLLAMA_BASE_URL)
                 .modelName(modelName)
@@ -20,10 +20,11 @@ public class SimpleChatTest {
     }
 
     public static void main(String[] args) {
+        for(String modelName : TEST_MODELS) {
+            System.out.println("\n\n>>>>>>>Testing Model :" + modelName + "<<<<<<\n");
+            testLLMModel(modelName);
+            System.out.println("\n\n>>>>>>>Completed Testing Model :" + modelName + "<<<<<<\n");
 
-        testLLMModel(LLAMA3_2_MODEL_NAME);
-        testLLMModel(MISTRAL_MODEL_NAME);
-        testLLMModel(PHI3_MODEL_NAME);
-        testLLMModel(GEMMA_MODEL_NAME);
+        }
     }
 }

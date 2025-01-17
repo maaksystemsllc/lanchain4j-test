@@ -1,11 +1,13 @@
 # Get Ollama  
-https://ollama.com/search
+### https://ollama.com/search
 
+### https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 # Run Ollama
-ollama run mistral
-ollama run llama3
-ollama run gemma
-ollama run phi3
+
+### ollama run mistral
+### ollama run llama3
+### ollama run gemma
+### ollama run phi3
 
 # Run the code StreamingChatModelTest.java
 
@@ -84,4 +86,4 @@ Algorithms evolve with every beat,
 A symphony of code and feat.
 Process finished with exit code 0
 
-it does sometims errorout with timeout.
+it errors out  with timeout.

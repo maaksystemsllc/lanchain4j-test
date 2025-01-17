@@ -1,4 +1,4 @@
-package maak;
+package maak.langchain;
 
 import dev.langchain4j.data.message.AiMessage;
 import dev.langchain4j.model.StreamingResponseHandler;
@@ -11,7 +11,7 @@ import java.util.concurrent.CompletableFuture;
 
 import static maak.LLMConstants.*;
 
-public class OllamaStreamingChatModelTest {
+public class StreamingChatModelTest {
 
     static void testStreaming(String modelName) {
         System.out.println("\n\n>>>>>>>Testing Model :" + modelName + "<<<<<<\n");
